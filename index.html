@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Tag Generator</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+    <div id="app" class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <h1 style="margin-top: 30px; margin-bottom: 30px; font-size: 30px;">SVG Tag Generator</h1>
+                <form @submit.prevent="generateButton">
+                    <div class="form-group">
+                        <label for="buttonText">Button Text</label>
+                        <input type="text" class="form-control" id="buttonText" v-model="buttonText">
+                    </div>
+                    <div class="form-group">
+                        <label for="buttonColor">Button Color</label>
+                        <input type="color" class="form-control" id="buttonColor" v-model="buttonColor">
+                    </div>
+                    <div class="form-group">
+                        <label>Color Presets</label>
+                        <div class="d-flex flex-wrap">
+                            <div v-for="color in presetColors" :key="color" class="p-2">
+                                <div :style="{ backgroundColor: color }" class="rounded-circle" style="width: 25px; height: 25px; cursor: pointer;" @click="setColor(color)"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="textX">Text Position (X)</label>
+                        <input type="range" min="0" max="377" step="0.001" class="form-control" id="textX" v-model.number="textX">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Generate</button>
+                    <a :href="downloadUrl" :download="`status_${buttonText.toLowerCase()}.svg`" class="btn btn-success">Download SVG</a>
+                </form>
+                <div class="mt-5">
+                    <object :data="buttonSvg" type="image/svg+xml"></object>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include your Vue.js code -->
+    <script src="app.js"></script>
+</body>
+</html>
