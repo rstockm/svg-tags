@@ -8,6 +8,16 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- Include Vue.js -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .footer {
+            margin-top: auto;
+        }
+    </style>
 </head>
 <body>
     <div id="app" class="container">
@@ -44,6 +54,12 @@
             </div>
         </div>
     </div>
+
+    <footer class="footer py-3 bg-dark text-light text-center">
+        <div class="container" style="font-size: 0.8rem;">
+            <span>Written by ChatGPT4   |   Prompted by Ralf Stockmann   |   Source code on <a href="https://github.com/rstockm/svg-tags" target="_blank" style="color: inherit; text-decoration: underline;">GitHub</a></span>
+        </div>
+    </footer>
 
     <!-- Include your Vue.js code -->
     <script src="app.js"></script>
