@@ -4,6 +4,14 @@
 
 The SVG Button Generator is a lightweight tool designed to generate custom tags as SVG files that can be used as custom emojis in the open-source forum software Discourse. It provides a way to "tag" content visually without needing to use additional plugins.
 
+![image](https://github.com/rstockm/svg-tags/assets/3195116/f22d7f38-8b91-41a4-a013-d0feb589b831)
+SVG-Tag Generator
+
+A grid of tags in Discourse - embeded via custom emojis:
+![image](https://github.com/rstockm/svg-tags/assets/3195116/416b4230-375d-4ef1-b155-b8681136d8fa)
+
+
+
 ## Features
 
 The SVG Button Generator offers the following features:
