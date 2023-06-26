@@ -45,6 +45,8 @@ What makes this development process unique is the iterative and dynamic nature o
 
 This project serves as an example of the power of AI-assisted development. It illustrates that AI, like ChatGPT-4, can serve as an invaluable tool in the hands of developers, augmenting human creativity with computational efficiency. This approach holds great potential for future software development, offering a glimpse into the exciting possibilities of human-AI collaboration.
 
+You may take a look at the [prompt history](https://chat.openai.com/share/8278195f-dddc-4722-8ba7-62ec58e76ce1).
+
 
 ## How to Use
 
