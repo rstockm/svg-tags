@@ -7,8 +7,11 @@ The SVG Button Generator is a lightweight tool designed to generate custom tags 
 ![image](https://github.com/rstockm/svg-tags/assets/3195116/f22d7f38-8b91-41a4-a013-d0feb589b831)
 SVG-Tag Generator
 
-A grid of tags in Discourse - embeded via custom emojis:
+![image](https://github.com/rstockm/svg-tags/assets/3195116/51d1368a-2404-4301-988f-06be84b65154)
+how to set them up in Discourse settings as custom emoji
+
 ![image](https://github.com/rstockm/svg-tags/assets/3195116/416b4230-375d-4ef1-b155-b8681136d8fa)
+A grid of tags in Discourse - embeded via custom emojis:
 
 
 
